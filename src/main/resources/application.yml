@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+--- # Local profile
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db
+    username: user
+    password: pass
